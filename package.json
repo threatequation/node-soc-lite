@@ -1,0 +1,19 @@
+{
+  "name": "nodejsplugin",
+  "version": "0.0.0",
+  "description": "A small library to detect the attack and will protect the attack.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://hirok_orvi@bitbucket.org/ThreatEquationTeamID/nodejs-plugin.git"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "Threat Equation",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ThreatEquationTeamID/nodejs-plugin#readme"
+}
