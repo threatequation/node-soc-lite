@@ -1,23 +1,46 @@
 'use strict';
-var sanitizer = require('sanitize-html'),
-    _ = require('underscore');
- 
-module.exports = function(config, errors) {
-    return function(req, res, next) {
-        if (req.body) {
-            _.each(req.body, function(value, key) {
-                if(!parseInt(value,10) && value !== null) {
-                    if(typeof value === 'string') {
-                        value = value.replace(/&gt;/gi, '>');
-                        value = value.replace(/&lt;/gi, '<');
-                        value = value.replace(/(&copy;|&quot;|&amp;)/gi, '');
-                    }
-                    req.body[key] = sanitizer(value, {
-                        allowedTags: []
-                    });
-                }
-            });
+
+var chars = {
+  '&amp;'   : '&',
+  '&quot;'  : '"',
+  '&#39;'   : '\'',
+  '&lt;'    : '<',
+  '&gt;'    : '>',
+  '&#x2F;'  : '/',
+  '.dom'    :'document',
+  '&#045;'  : '-',
+  '&#061;'  : '=',
+  '&#059;'  : ';',
+  '&#038;'  : '&'
+  };
+  
+    
+module.exports = {
+  escape: function(html) {
+    if (!html) {
+      return '';
+    }
+
+    var values = Object.keys(chars).map(function(key) { return chars[key]; });
+    var re = new RegExp('(' + values.join('|') + ')', 'g');
+
+    return String(html).replace(re, function(match) {
+      for (var key in chars) {
+        if (chars.hasOwnProperty(key) && chars[key] === match) {
+          return key;
         }
-        return next();
-    };
+      }
+    });
+  },
+  unescape: function(html) {
+    if (!html) {
+      return '';
+    }
+
+    var re = new RegExp('(' + Object.keys(chars).join('|') + ')', 'g');
+
+    return String(html).replace(re, function(match) {
+      return chars[match];
+    });
+  }
 };
