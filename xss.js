@@ -1,5 +1,16 @@
 'use strict';
 
+var ThreatEquation = require('ThreatEquation');
+
+exports.check = function (req, res) {
+  for (var i = fusker.patterns.xss.length - 1; i >= 0; --i) {
+    if (ThreatEquation.patterns.xss[i].test(req.url)) {
+      ThreatEquation.http.handleAttack('XSS-' + i, req, res);
+      return;
+    }
+  }
+};
+
 var chars = {
   '&amp;'   : '&',
   '&quot;'  : '"',
