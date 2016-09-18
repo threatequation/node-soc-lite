@@ -19,6 +19,7 @@
   "homepage": "https://bitbucket.org/ThreatEquationTeamID/nodejs-plugin#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "plugin":"git+https://hirok_orvi@bitbucket.org/ThreatEquationTeamID/nodejs-plugin.git"
   }
 }
