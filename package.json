@@ -2,7 +2,7 @@
   "name": "nodejsplugin",
   "version": "0.0.0",
   "description": "A small library to detect and  protect the OWASP top 10 attack.",
-  "main": "main.js",
+  "main": "lib/xss.js",
   "private": true,
   "scripts": {
     "test": "make test"
