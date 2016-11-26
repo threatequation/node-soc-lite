@@ -1,18 +1,12 @@
-var  escaping = require('./lib/escaping');
-var url = require('url');
+'use strict';
 
-module.exports.escapeHTML = escaping.escapeHTML;
-console.log(module.exports.escapeHTML);
-module.exports.escapeHTMLAttribute = escaping.escapeHTMLAttribute;
-module.exports.encodeJavaScriptIdentifier = escaping.encodeJavaScriptIdentifier;
-module.exports.encodeJavaScriptString = escaping.encodeJavaScriptString;
-module.exports.encodeJavaScriptData = escaping.encodeJavaScriptData;
-module.exports.encodeCSSIdentifier = escaping.encodeCSSIdentifier;
-module.exports.encodeCSSString = escaping.encodeCSSString;
+var xss=require('./lib/xss');
 
-//module.exports.consoleLog = logging;
-
-function fullUrl(req) {
- console.log (req.originalUrl);
-}
-console.log("I found");
+exports.ThreatEquationMiddleware = function(req,res){
+     if (req.method === "GET"){
+       xss(req,res);
+     }
+     if (req.method === "POST"){
+       csrf(req);
+     }
+     };
