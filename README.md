@@ -31,7 +31,7 @@
 ## Create a congigure.txt file in plugin directory ##
 
 1. Go to the directory `cd /home/ubuntu/ThreatEquation/node_modules/nodejs-plugin/lib`
-2. Create congigure.txt and add those lines.
+2. Create file.txt and add those lines.
 
     `user_id=<user_id>`
     
