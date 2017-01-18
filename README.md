@@ -9,10 +9,12 @@
 
 ## without npm ##
 
-1. Download the `tar.gz` file from the site.
-2. unzip it in your app `npm_module`'s directory.
-3. cd folder directory. Ex: `cd /home/ubuntu/ThreatEquation/node_modules/nodejs-plugin`
-4. then command `npm install` there.
+1. Download the `tar.gz` file from the site in your app folder.
+2. unzip it in your app folder.
+3. cd the directory.
+4. In terminal, run `./install.sh`.
+
+After doing those things "The plugin is sucessfully install" the message will be show in your terminal.
 
 # Add those lines in your `app.js` or `server.js` file.
 
