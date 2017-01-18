@@ -22,6 +22,7 @@ then
                 cp -R $main_directory $current_dir
                 cd $node
                 npm install
+                echo "The Plugin is successfully install"
         else
                 echo "Directory exists"
                 cd $_mydir
@@ -34,5 +35,6 @@ then
                 cp -R $main_directory $current_dir
                 cd $node
                 npm install
+                echo "The Plugin is successfully install"
         fi
 fi
