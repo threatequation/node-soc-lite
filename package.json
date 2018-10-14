@@ -23,17 +23,19 @@
     "plugin": "git+https://greenhirok@bitbucket.org/ThreatEquationTeamID/nodejs-plugin.git"
   },
   "dependencies": {
-    "sanitize-html": "1.19.0",
-    "winston": "3.1.0",
-    "winston-logstash": "0.4.0",
-    "retire": "2.0.0",
-    "body-parser": "1.18.3",
-    "cookie-parser": "1.4.3",
-    "csurf": "1.9.0",
-    "eslint": "5.6.1",
-    "express": "4.16.4",
-    "express-session": "1.15.6",
-    "lodash": "4.17.11",
-    "mocha": "5.2.0"
+    "sanitize-html": "^1.19.0",
+    "winston": "^3.1.0",
+    "winston-logstash": "^0.4.0",
+    "retire": "^2.0.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "eslint": "^5.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "ini": "^1.3.5",
+    "ipware": "^1.0.0",
+    "lodash": "^4.17.11",
+    "mocha": "^5.2.0"
   }
 }
