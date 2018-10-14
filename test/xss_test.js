@@ -1,7 +1,7 @@
 var should = require('chai').should(),
-    xss = require('../lib/xss'),
-    escape = xss.escape,
-    unescape = xss.unescape;
+xss = require('../lib/xss'),
+escape = xss.escape,
+unescape = xss.unescape;
 
 describe('#escape', function() {
   it('converts & into &amp;', function() {

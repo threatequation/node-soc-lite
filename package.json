@@ -1,26 +1,29 @@
 {
-  "name": "nodejsplugin",
+  "name": "node-soc",
   "version": "0.0.5",
-  "description": "A small library to detect and  protect the OWASP top 10 attack.",
+  "description": "A security library to detect and  protect the OWASP Top basic attack.",
   "main": "index.js",
-  "private": true,
   "scripts": {
-    "test": "make test"
+    "test": "mocha --reporter spec test/*_test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://greenhirok@bitbucket.org/ThreatEquationTeamID/nodejs-plugin.git"
+    "url": "https://github.com/threatequation/node-soc.git"
   },
   "keywords": [
-    "[]"
+    "xss attack prevention",
+    "sql attack prevention",
+    "node-soc",
+    "soc",
+    "detection",
+    "prevention"
   ],
   "author": "Threat Equation",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/ThreatEquationTeamID/nodejs-plugin#readme",
+  "homepage": "https://github.com/threatequation/node-soc.git#readme",
   "devDependencies": {
-    "chai": "4.2.0",
-    "mocha": "5.2.0",
-    "plugin": "git+https://greenhirok@bitbucket.org/ThreatEquationTeamID/nodejs-plugin.git"
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
   },
   "dependencies": {
     "sanitize-html": "^1.19.0",
