@@ -1,14 +1,18 @@
-# node-soc #
+# node-soc-lite #
 
-* A security middleware for node.js. app to Detect, Prevent and generate report in your dashboard
+* A security middleware for node.js. app to Detect and generate report in your dashboard
 
 ### How do I get set up? ###
 
 ### with npm ###
 
-`npm install node-soc --save`
+`npm install node-soc-lite --save`
 
-After doing those things "The plugin is sucessfully install" the message will be show in your terminal.
+### or with Yarn ###
+
+`yarn add node-soc-lite`
+
+After doing those things "The node-soc-lite is successfully install" the message will be show in your terminal.
 
 ### Add those lines in your `app.js` or `server.js` file. ###
 
@@ -43,9 +47,11 @@ restart the app.
 
 ## Features ##
 
-1. SQL injection
-3. XSS Attack
-4. Insecure File Access
+Monitoring request data and generate reports on following areas -
+
+1.SQL injection
+2.XSS (Cross Site Scripting)
+3.Insecure File/Directory Access
 
 
 ### Who do I talk to? ###

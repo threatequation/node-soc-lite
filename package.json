@@ -1,14 +1,14 @@
 {
-  "name": "node-soc",
-  "version": "0.0.5",
-  "description": "A security library to detect and  protect the OWASP Top basic attack.",
+  "name": "node-soc-lite",
+  "version": "0.0.1",
+  "description": "A security middleware for NodeJs(express) app to Detect OWASP Top Basic and generate report in your ThreatEquation dashboard.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec test/*_test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/threatequation/node-soc.git"
+    "url": "https://github.com/threatequation/node-soc-lite.git"
   },
   "keywords": [
     "xss attack prevention",
@@ -20,7 +20,7 @@
   ],
   "author": "Threat Equation",
   "license": "ISC",
-  "homepage": "https://github.com/threatequation/node-soc.git#readme",
+  "homepage": "https://github.com/threatequation/node-soc-lite.git#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0"
