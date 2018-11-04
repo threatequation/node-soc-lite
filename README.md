@@ -51,7 +51,6 @@ Monitoring request data and generate reports on following areas -
 
 1.SQL injection
 2.XSS (Cross Site Scripting)
-3.Insecure File/Directory Access
 
 
 ### Who do I talk to? ###
