@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/threatequation/node-soc-lite.git"
+    "url": "git+https://github.com/threatequation/node-soc-lite.git"
   },
   "keywords": [
     "xss attack prevention",
@@ -20,7 +20,7 @@
   ],
   "author": "Threat Equation",
   "license": "ISC",
-  "homepage": "https://github.com/threatequation/node-soc-lite.git#readme",
+  "homepage": "https://www.threatequation.com",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0"
@@ -41,5 +41,12 @@
     "ipware": "^1.0.0",
     "lodash": "^4.17.11",
     "mocha": "^5.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/threatequation/node-soc-lite/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }

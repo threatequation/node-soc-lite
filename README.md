@@ -1,5 +1,8 @@
 # node-soc-lite #
 
+[![npm version](https://img.shields.io/npm/v/node-soc-lite.svg?style=flat-square)](https://www.npmjs.org/package/node-soc-lite)
+[![license](https://badgen.net/badge/license/ISC/blue)](https://www.npmjs.org/package/node-soc-lite)
+
 * A security middleware for node.js. app to Detect and generate report in your dashboard
 
 ### How do I get set up? ###
@@ -20,7 +23,7 @@ After doing those things "The node-soc-lite is successfully install" the message
 
     
     ```javascript
-    var app = express();`
+    var app = express();
     var nodeSoc = require("node-soc");
     ```
  
@@ -50,6 +53,7 @@ restart the app.
 Monitoring request data and generate reports on following areas -
 
 1.SQL injection
+
 2.XSS (Cross Site Scripting)
 
 
