@@ -24,7 +24,7 @@ After doing those things "The node-soc-lite is successfully install" the message
     
     ```javascript
     var app = express();
-    var nodeSoc = require("node-soc");
+    var nodeSoc = require("node-soc-lite");
     ```
  
 2. Configure the middleware function:
