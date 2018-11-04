@@ -1,6 +1,6 @@
 {
   "name": "node-soc-lite",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A security middleware for NodeJs(express) app to Detect OWASP Top Basic and generate report in your ThreatEquation dashboard.",
   "main": "index.js",
   "scripts": {
